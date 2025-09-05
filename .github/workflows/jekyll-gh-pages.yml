@@ -1,5 +1,9 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+title:
+theme: jekyll-theme-minimal
+title: Abhishek's homepage
+description: Bookmark this to keep an eye on my project updates!
 
 on:
   # Runs on pushes targeting the default branch
