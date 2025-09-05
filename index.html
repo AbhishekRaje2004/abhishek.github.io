@@ -3,48 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
+    <title>Abhishek - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Abhishek</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#interests" class="nav-link">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blogs" class="nav-link">Blogs</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home">
-        <h1>Welcome to My Professional Website</h1>
-        <p>Your one-stop solution for all your web development needs.</p>
-    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Abhishek</span></h1>
+            <p class="hero-subtitle">Welcome to my portfolio</p>
+            <p class="hero-description">
+                <!-- EDIT THIS: Add your main description/tagline here -->
+                Passionate about technology, innovation, and creating meaningful solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn primary">Learn More</a>
+                <a href="#blogs" class="btn secondary">Read My Blogs</a>
+            </div>
+        </div>
+    </section>
 
     <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm a passionate web developer with experience in creating dynamic and responsive websites.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- EDIT THIS: Replace with your actual about information -->
+                    <p>
+                        Hello! I'm Abhishek, a passionate individual with a love for technology and continuous learning. 
+                        I enjoy exploring new ideas, solving problems, and sharing knowledge with others.
+                    </p>
+                    <p>
+                        My journey has been filled with exciting challenges and opportunities to grow both personally 
+                        and professionally. I believe in the power of innovation and the importance of staying curious.
+                    </p>
+                    
+                    <!-- EDIT THIS: Add your skills/technologies -->
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- EDIT THIS: Replace with your actual photo -->
+                    <div class="placeholder-image">
+                        <i class="fas fa-user"></i>
+                        <p>Add your photo here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Interests Section -->
-    <section id="interests">
-        <h2>My Interests</h2>
-        <p>I enjoy coding, learning new technologies, and sharing my knowledge through blogs.</p>
+    <section id="interests" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Interests</h2>
+            <div class="interests-grid">
+                <!-- EDIT THIS: Replace with your actual interests -->
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>I love coding and building applications that solve real-world problems.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Learning</h3>
+                    <p>Constantly exploring new technologies and expanding my knowledge base.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Creating beautiful and user-friendly interfaces and experiences.</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Contributing to open-source projects and helping fellow developers.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Blogs Section -->
-    <section id="blogs">
-        <h2>My Blogs</h2>
-        <p>Check out my latest articles and tutorials on various web development topics.</p>
+    <section id="blogs" class="section">
+        <div class="container">
+            <h2 class="section-title">My Blogs</h2>
+            <div class="blogs-grid">
+                <!-- EDIT THIS: Replace with your actual blog posts -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Getting Started with Web Development</h3>
+                        <p class="blog-excerpt">
+                            A beginner's guide to starting your journey in web development...
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building Modern Applications</h3>
+                        <p class="blog-excerpt">
+                            Exploring the latest trends and technologies in modern app development...
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 28, 2024</span>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Tips for Problem Solving</h3>
+                        <p class="blog-excerpt">
+                            Effective strategies for approaching and solving complex problems...
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">January 20, 2024</span>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <p>Want to read more?</p>
+                <a href="#" class="btn primary">View All Posts</a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 My Professional Website. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abhishek</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <!-- EDIT THIS: Add your actual social media links -->
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abhishek. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
