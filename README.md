@@ -3,7 +3,6 @@
 A clean, academic-style personal website built with Jon Barron's template.
 
 ## 🚀 Live Site
-- **Primary**: https://abhishekraje.com
 - **GitHub Pages**: https://abhishekraje2004.github.io
 
 ## 📝 How to Customize
@@ -57,13 +56,12 @@ The design uses `stylesheet.css` which provides:
 - Hover effects
 
 ## 🌐 Domain Setup
-The site is configured for `abhishekraje.com` via the CNAME file.
+The site is hosted on GitHub Pages at: https://abhishekraje2004.github.io
 
 ## 📁 File Structure
 ```
 ├── index.html          # Main page (edit your content here)
 ├── stylesheet.css      # Styling (Jon Barron's template)
-├── CNAME              # Custom domain configuration
 ├── images/            # Photos and project images
 │   ├── profile.jpg    # Your profile photo
 │   ├── project1.jpg   # Project screenshots
@@ -74,7 +72,6 @@ The site is configured for `abhishekraje.com` via the CNAME file.
 ## 🔄 Deployment
 Push changes to the `main` branch and they'll automatically deploy to:
 - GitHub Pages: https://abhishekraje2004.github.io
-- Custom Domain: https://abhishekraje.com (after DNS setup)
 
 ---
 Template credit: [Jon Barron](https://github.com/jonbarron/jonbarron_website)
