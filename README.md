@@ -1,133 +1,80 @@
-# Abhishek's Portfolio Website
+# Abhishek Raje - Personal Website
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
+A clean, academic-style personal website built with Jon Barron's template.
 
-## 🚀 Quick Start
+## 🚀 Live Site
+- **Primary**: https://abhishekraje.com
+- **GitHub Pages**: https://abhishekraje2004.github.io
 
-1. Open `index.html` in your browser to view the site
-2. Follow the customization guide below to make it your own
+## 📝 How to Customize
 
-## 📝 How to Customize (Easy Editing Guide)
+### 1. Personal Information (index.html)
+Look for `<!-- EDIT THIS:` comments and replace:
 
-### 1. Personal Information
+**Header Section:**
+- Your name, title, organization
+- Bio/description paragraph
+- Contact links (email, CV, social media)
 
-**In `index.html`, look for comments that start with `<!-- EDIT THIS:`**
+**Profile Photo:**
+- Replace `images/profile.jpg` with your photo
+- Keep it square aspect ratio for best results
 
-#### Hero Section
-- Line ~45: Update your name and description
-- Line ~50: Change your tagline/subtitle
+### 2. Projects Section
+For each project, update:
+- Project title and description
+- Project image in `images/` folder
+- Links to project page, demo, code, paper
+- Collaborator names and publication venue
 
-#### About Me Section
-- Line ~65-75: Replace with your actual story and background
-- Line ~80-90: Update your skills in the skill tags
+**Add More Projects:**
+Copy the project template in the HTML and modify the details.
 
-#### Interests Section
-- Line ~105-145: Replace the 4 interest cards with your actual interests
-- Change icons, titles, and descriptions
+### 3. Experience Section
+Add your work experience:
+- Company/organization name
+- Job title and dates
+- Brief description of role
 
-#### Blog Posts
-- Line ~155-200: Replace with your actual blog posts
-- Update titles, excerpts, dates, and links
+### 4. Education Section
+Add your educational background:
+- University/institution name
+- Degree and graduation year
+- Major/field of study
+- Relevant details (GPA, honors, etc.)
 
-#### Social Media Links
-- Line ~210-215: Add your actual social media URLs
+### 5. Images
+Replace placeholder images in the `images/` folder:
+- `profile.jpg` - Your profile photo
+- `project1.jpg`, `project2.jpg` - Project screenshots/images
+- Add more project images as needed
 
-### 2. Colors and Styling
+## 🎨 Styling
+The design uses `stylesheet.css` which provides:
+- Clean, academic layout
+- Responsive design
+- Professional typography
+- Hover effects
 
-**In `styles.css`, look for the CSS Variables section at the top:**
+## 🌐 Domain Setup
+The site is configured for `abhishekraje.com` via the CNAME file.
 
-```css
-:root {
-    /* EDIT THESE COLORS TO MATCH YOUR PREFERENCE */
-    --primary-color: #3b82f6;    /* Main blue color */
-    --secondary-color: #1e40af;  /* Darker blue */
-    --accent-color: #f59e0b;     /* Orange accent */
-    /* ... other colors */
-}
+## 📁 File Structure
 ```
-
-**Popular Color Schemes:**
-- **Professional Blue:** Keep current colors
-- **Green Tech:** `--primary-color: #10b981; --accent-color: #059669;`
-- **Purple Creative:** `--primary-color: #8b5cf6; --accent-color: #7c3aed;`
-- **Red Bold:** `--primary-color: #ef4444; --accent-color: #dc2626;`
-
-### 3. Adding Your Photo
-
-Replace the placeholder in the About section:
-1. Add your photo to the project folder (e.g., `profile.jpg`)
-2. In `index.html`, line ~85, replace the placeholder div with:
-```html
-<div class="about-image">
-    <img src="profile.jpg" alt="Abhishek" style="width: 300px; height: 300px; border-radius: 15px; object-fit: cover;">
-</div>
-```
-
-### 4. Adding Real Blog Links
-
-For each blog post in `index.html`:
-1. Replace `href="#"` with your actual blog URL
-2. Update the blog image (replace `<i class="fas fa-laptop-code"></i>` with `<img src="blog-image.jpg" alt="Blog">`)
-
-### 5. Social Media Links
-
-In the footer section, update the social links:
-```html
-<a href="https://github.com/yourusername" class="social-link"><i class="fab fa-github"></i></a>
-<a href="https://linkedin.com/in/yourusername" class="social-link"><i class="fab fa-linkedin"></i></a>
-<a href="https://twitter.com/yourusername" class="social-link"><i class="fab fa-twitter"></i></a>
-<a href="mailto:your.email@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
-```
-
-## 📱 Features
-
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Modern design with smooth animations
-- ✅ Easy to customize with clear comments
-- ✅ Fast loading and optimized
-- ✅ Professional layout
-- ✅ Mobile-friendly navigation
-
-## 🛠️ File Structure
-
-```
-abhishek.github.io/
-├── index.html          # Main HTML file (edit your content here)
-├── styles.css          # Styling (edit colors and layout here)
-├── script.js           # JavaScript functionality
+├── index.html          # Main page (edit your content here)
+├── stylesheet.css      # Styling (Jon Barron's template)
+├── CNAME              # Custom domain configuration
+├── images/            # Photos and project images
+│   ├── profile.jpg    # Your profile photo
+│   ├── project1.jpg   # Project screenshots
+│   └── ...
 └── README.md          # This file
 ```
 
-## 🎨 Customization Tips
-
-1. **Easy Changes:** Look for `<!-- EDIT THIS:` comments in HTML
-2. **Colors:** Change CSS variables in `styles.css`
-3. **Fonts:** Update `--font-primary` in CSS variables
-4. **Layout:** Modify grid columns in CSS (e.g., `grid-template-columns`)
-5. **Icons:** Use [Font Awesome](https://fontawesome.com/icons) class names
-
-## 📄 Adding New Sections
-
-To add a new section:
-1. Add navigation link in the navbar
-2. Create a new section in HTML following the existing pattern
-3. Add corresponding CSS if needed
-
-## 🚀 Publishing
-
-This site is ready to be hosted on GitHub Pages:
-1. Push your changes to the `main` branch
-2. Go to repository Settings > Pages
-3. Select "Deploy from a branch" and choose `main`
-4. Your site will be available at `https://yourusername.github.io`
-
-## 💡 Need Help?
-
-- All major customization points are marked with `<!-- EDIT THIS:` comments
-- Colors are controlled by CSS variables at the top of `styles.css`
-- The design is mobile-first and fully responsive
-- Icons come from Font Awesome (included via CDN)
+## 🔄 Deployment
+Push changes to the `main` branch and they'll automatically deploy to:
+- GitHub Pages: https://abhishekraje2004.github.io
+- Custom Domain: https://abhishekraje.com (after DNS setup)
 
 ---
-
-**Happy coding! 🎉**
+Template credit: [Jon Barron](https://github.com/jonbarron/jonbarron_website)
