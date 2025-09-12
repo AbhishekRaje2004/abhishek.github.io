@@ -163,22 +163,15 @@ span.highlight {
     padding-top: 10px !important;
   }
 
-  /* Blog articles - stack vertically on mobile with content first */
-  .blog-article {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .blog-content {
-    order: 1 !important;
+  /* Blog articles - stack vertically on mobile */
+  table tbody tr td[style*="width:20%"] {
     width: 100% !important;
+    text-align: center !important;
     padding: 10px !important;
   }
 
-  .blog-image {
-    order: 2 !important;
+  table tbody tr td[style*="width:80%"] {
     width: 100% !important;
-    text-align: center !important;
     padding: 10px !important;
   }
 
