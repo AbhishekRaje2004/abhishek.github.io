@@ -140,3 +140,105 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Main container adjustments */
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Header section - stack vertically on mobile */
+  table tbody tr td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* Profile image adjustments */
+  .name {
+    font-size: 24px !important;
+    padding-top: 10px !important;
+  }
+
+  /* Blog articles - stack vertically on mobile */
+  table tbody tr td[style*="width:20%"] {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+
+  table tbody tr td[style*="width:80%"] {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* Images in blog articles */
+  img[width="160"] {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  /* Text adjustments for mobile */
+  p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin: 8px 0 !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    margin: 15px 0 10px 0 !important;
+  }
+
+  /* Link adjustments */
+  a {
+    word-break: break-word !important;
+  }
+
+  .papertitle {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    display: block !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Spacing adjustments */
+  table[style*="border-spacing:0px 10px"] tbody tr td {
+    padding: 8px !important;
+    border-bottom: 1px solid #eee !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Center content on mobile */
+  table[style*="margin-right:auto;margin-left:auto"] {
+    margin: 0 10px !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: 20px !important;
+  }
+
+  img[width="160"] {
+    width: 100px !important;
+  }
+
+  .papertitle {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 13px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+}
